@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="230" viewBox="0 0 230 230">
+  <defs>
+    <filter id="Path_73" x="0" y="0" width="230" height="230" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#aaa" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_74" x="20" y="20" width="190" height="190" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-color="#aaa" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.847" y1="0.123" x2="0.197" y2="0.903" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1270e3"/>
+      <stop offset="1" stop-color="#59c2ff"/>
+    </linearGradient>
+  </defs>
+  <g id="skill-item-2" transform="translate(-685 -2404)">
+    <g transform="matrix(1, 0, 0, 1, 685, 2404)" filter="url(#Path_73)">
+      <path id="Path_73-2" data-name="Path 73" d="M0,0A75,75,0,0,1-75-75a74.625,74.625,0,0,1,14.41-44.2A74.888,74.888,0,0,1,0-150,75,75,0,0,1,75-75,75,75,0,0,1,0,0M0-160a84.863,84.863,0,0,0-68.67,34.91A84.584,84.584,0,0,0-85-75,85.006,85.006,0,0,0,0,10,85.005,85.005,0,0,0,85-75,85.005,85.005,0,0,0,0-160" transform="translate(115 190)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 685, 2404)" filter="url(#Path_74)">
+      <path id="Path_74-2" data-name="Path 74" d="M0,0A65,65,0,0,1-65,65,65,65,0,0,1-130,0a64.62,64.62,0,0,1,12.49-38.3A64.853,64.853,0,0,1-65-65,65,65,0,0,1,0,0" transform="translate(180 115)" fill="#fff"/>
+    </g>
+    <path id="Path_75" data-name="Path 75" d="M0,0A5,5,0,0,0-5,5a5,5,0,0,0,5,5H0A65,65,0,0,1,65,75,65,65,0,0,1,0,140,65,65,0,0,1-65,75,64.62,64.62,0,0,1-52.51,36.7l-.035-.025a4.953,4.953,0,0,0,.961-2.925,5,5,0,0,0-5-5,4.981,4.981,0,0,0-4.254,2.4A74.616,74.616,0,0,0-75,75,75,75,0,0,0,0,150,75,75,0,0,0,75,75,75,75,0,0,0,0,0" transform="translate(800 2444)" fill="url(#linear-gradient)"/>
+    <path id="Path_76" data-name="Path 76" d="M0-170H170V0H0Z" transform="translate(715 2604)" fill="none"/>
+    <text id="_95_" data-name="95%" transform="translate(802.001 2532)" fill="#5d5d5d" font-size="34" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-34.299" y="0">95%</tspan></text>
+  </g>
+</svg>
