@@ -20,3 +20,13 @@ function closeMenu(){
     // menu.style.display="none";
     close.style.display="none";
 }
+
+
+const galBtn=document.getElementById('gal-btn');
+const galMenu=document.querySelector('.nav-gallery .content');
+
+galBtn.addEventListener('click',()=>{
+    galMenu.classList.toggle('show');
+    galBtn.classList.toggle('rotate');
+    
+});

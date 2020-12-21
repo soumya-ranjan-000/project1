@@ -470,6 +470,13 @@ header {
   align-items: center;
 
 }
+.section-5 .gallery .nav-gallery .gal-btn{
+  display: none;
+}
+.section-5 .gallery .nav-gallery .content{
+  display: flex;
+  flex-direction: row;
+}
 
 .section-5 .gallery .nav-gallery a {
   text-decoration: none;
