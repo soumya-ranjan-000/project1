@@ -186,6 +186,14 @@
     height: max-content;
     
   }
+  .section-5 .nav-gallery .idropbtn{
+    display: none;
+  }
+  .section-5 .nav-gallery button {
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+  
   #feedback {
     margin-top: 1rem;
   }
