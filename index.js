@@ -33,14 +33,15 @@ console.log(navbar);
 
 
   // console.log(window.innerWidth);
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth > 1200) {
+    showMenu();
+  }
+  else{
+    
     for(let i=0;i<navbar.length;i++){
       navbar[i].addEventListener('click',()=>{
         closeMenu();
       })
     }
-  }
-  else{
-    showMenu();
   }
 
