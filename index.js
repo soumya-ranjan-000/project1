@@ -4,6 +4,20 @@ const close=document.getElementById('close');
 const menu=document.querySelector('.sec-1 .navigation-menu');
 open.addEventListener('click',showMenu);
 close.addEventListener('click',closeMenu);
+const navbar=  document.getElementById('navbar').getElementsByTagName('a');
+console.log(navbar);
+
+
+  // console.log(window.innerWidth);
+  if (window.innerWidth <1700) {
+
+    for(let i=0;i<navbar.length;i++){
+      navbar[i].addEventListener('click',()=>{
+        closeMenu();
+      });
+  
+  }
+}
 
 function showMenu(){
 
@@ -28,20 +42,5 @@ function closeMenu(){
 
 }
 
-const navbar=  document.getElementById('navbar').getElementsByTagName('a');
-console.log(navbar);
 
-
-  // console.log(window.innerWidth);
-  if (window.innerWidth > 1200) {
-    showMenu();
-  }
-  else{
-    
-    for(let i=0;i<navbar.length;i++){
-      navbar[i].addEventListener('click',()=>{
-        closeMenu();
-      })
-    }
-  }
 
