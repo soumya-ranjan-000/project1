@@ -1,0 +1,225 @@
+@media screen and (min-width:620px) and (max-width: 800px){
+    /* For mobile phones: */
+    body {
+     overflow-x: hidden;
+     /* opacity: 0.5; */
+   }
+   .sec-1{
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+
+   }
+   
+   .sec-1 .navbar {
+    flex-direction: column;
+  }
+  
+
+  .sec-1 .navigation-menu{
+    padding-top: 6rem;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: -70%;
+    z-index: 10;
+    width: 70%;
+    background-color: rgb(114, 236, 0);    display: flex;
+    transition: right 0.6s ease;
+    z-index: 20;
+    opacity: 0;
+    transition: right 0.6s ease, opacity 0.4s ease-in;
+  
+  }
+  .sec-1 .navigation-menu::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 1vw;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.849);
+    z-index: 9;
+    opacity: 0;
+    transition: opacity 0.2s ease-in, width 0.4s ease;
+  }
+  .sec-1 .navigation-menu.show::before
+  {
+    opacity: 1;
+    width: 100vw;
+    transition: opacity 0.3s ease-in;
+  }
+  #open,
+  #close {
+    
+    opacity: 1;
+    transition: opacity 0.6s ease;
+  
+  }
+  
+  #close {
+    display: none;
+  }
+  
+  .sec-1 .navigation-menu{
+    justify-content: space-evenly;
+    padding: 10rem 0;
+  }
+  
+  .sec-1 .navigation-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    font-weight: 600;
+    position: relative;
+    transition: none;
+   width: 100%;
+   text-align: center;
+   transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  
+  }
+  
+  .sec-1 .navigation-menu a:hover{
+    border-left: solid 0.7rem rgb(27, 27, 27);
+    background-color: rgba(255, 255, 255, 0.842);
+    color: #1f1f1f;
+    transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .sec-1 .navigation-menu a::first-letter{
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 2.1rem;
+  
+  
+  }
+  .sec-1 .navigation-menu a:hover::first-letter{
+    color: #1f1f1f;
+  
+  }
+  
+  .sec-1 .navigation-menu a.active::before{
+    content: none;
+  
+  }
+  
+  .sec-1 .navigation-menu a.active{
+    background-color: rgba(255, 255, 255, 0.842);
+    box-shadow: inset 1px 1px 10px #1f1f1f80;
+    border-left: solid 0.7rem rgb(27, 27, 27);
+    color: #1f1f1f !important;
+  }
+  .sec-1 .navigation-menu a.active::first-letter{
+    color: #1f1f1f !important;
+  }
+   
+  header div {
+    padding: 0rem 0.5rem;
+    width: 100vw;
+   
+   }
+   .sec-1 header h1 {
+    font-size: 8rem;
+    padding: 0 0;
+
+  }
+  
+  .section-2 {
+    padding: 5% 2% 15%;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    flex-wrap: wrap;
+    
+  }
+  .section-2 .my-services {
+      display: flex;
+      flex-direction: column;
+       width: 90vw;
+       justify-content: center;
+       text-align: center;
+  }
+  
+  
+  .section-2 .left-side-btn {
+  align-self: center;
+  }
+  .section-2 .service-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-2 .service-card .row_ {
+    flex-wrap: wrap;
+    margin: 2rem 2rem;
+  }
+  .section-2 .service-card .row_ .card {
+    width: 70rem;
+    height: 20rem;
+    flex: 1 1;
+    justify-content: flex-start;
+    
+  }
+  .section-2 .service-card .row_ .card p{
+      text-align: left;
+      width: 80%;
+  }
+  
+  .section-3 {
+    margin-top: 0rem;
+    clip-path: polygon(0 13%, 100% 1%, 100% 87%, 0% 100%);
+ 
+  }
+  .section-4 {
+    padding: 5% 2%;
+
+  }
+  .section-4 .content p {
+    margin-top: 1.5rem;
+    width: 80vw;
+ 
+  }
+  .section-5 {
+    padding: 10% 5%;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+ 
+  }
+  #img-container .cl:nth-of-type(3){
+    flex-direction: row;
+    height: max-content;
+    
+  }
+  #feedback {
+    margin-top: 1rem;
+  }
+
+  .carousel-inner .container .row{
+      display: flex;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+  }
+  #feedback .carousel {
+    padding: 3% 1%;
+
+  }
+  .section-7 {
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+  }
+  .section-8{
+      align-items: center;
+  }
+  .section-8 .row_ {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .section-8 .row_ .col_ {
+    padding: 2rem 5rem;
+  }
+  
+  .contact {
+    width: 90vw;
+  }
+   }
+    
