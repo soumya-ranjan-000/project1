@@ -404,6 +404,7 @@ header div {
 }
 .section-5 .nav-gallery .gal-btn{
   display: none;
+  padding: 1rem 1.5rem;
 }
 .section-5  .nav-gallery .content{
   display: flex;

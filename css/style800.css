@@ -1,4 +1,4 @@
-@media screen and (min-width:620px) and (max-width: 800px){
+@media screen and (min-width:500px) and (max-width: 800px){
     /* For mobile phones: */
     body {
      overflow-x: hidden;
@@ -192,6 +192,7 @@
   .section-5 .nav-gallery button {
     text-decoration: none;
     font-size: 1.8rem;
+    margin: 0 0.5rem;
   }
   
   #feedback {

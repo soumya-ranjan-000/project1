@@ -154,7 +154,7 @@ galBtn.addEventListener('click',()=>{
 
 
   // console.log(window.innerWidth);
-  if (window.innerWidth < 700) {
-    document.getElementsByClassName('nav-gallery')[0].getElementsByClassName('content')[0].classList.remove('content')
-    document.getElementsByClassName('nav-gallery')[0].classList.remove('nav-gallery');
-  }
+  // if (window.innerWidth < 700) {
+  //   document.getElementsByClassName('nav-gallery')[0].getElementsByClassName('content')[0].classList.remove('content')
+  //   document.getElementsByClassName('nav-gallery')[0].classList.remove('nav-gallery');
+  // }
