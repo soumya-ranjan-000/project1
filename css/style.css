@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* transition: all ease-in 0.2s; */
   font-size: 62.5%;
 }
 
-body {
-  /* overflow-x: hidden; */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
-
 p,
 a,
 button {
@@ -30,39 +29,62 @@ h2 {
   font-size: 4rem;
 }
 
-/* body {
-  position: relative;
-} */
-
 
 /* -------------------------------------------------------- */
 
 .sec-1 {
-  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(#7a39db8b, #6048ff84),url("https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  position: relative;
+  padding: 2% 5%;
+  background: linear-gradient(#7a39db8b, #6048ff84);
+  overflow: hidden;
+ clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 97%);
+}
+.sec-1::before {
+  animation: slidedown 1.5s ease-out 0.3s forwards;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 130%;
+  margin: 0;
+  padding: 0;
+  background:linear-gradient(#7a39db62, #6048ff56),url("https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
   background-size: cover;
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
-  position: relative;
-  padding: 2% 5%;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
-
-
+  opacity: 0;
+  overflow: hidden;
 }
 
+@keyframes slidedown{
+  0%{
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-.sec-1 span {
+.sec-1 .logo {
+  animation: slidedown .5s ease-out 1.5s forwards;
   font-size: 3rem;
   color: hsl(79, 97%, 56%);
   font-family: aller-display, sans-serif;
   font-weight: 600;
+  opacity: 0;
 }
 
 .sec-1 .navbar {
+  
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -77,6 +99,7 @@ h2 {
 }
 
 .sec-1 .navigation-menu a {
+  animation: slidedown .7s ease-out 1.7s forwards;
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding-bottom: 0.1rem;
@@ -84,6 +107,7 @@ h2 {
   position: relative;
   /* letter-spacing: 0.2rem; */
   transition: color 0.3s ease-in;
+  opacity: 0;
 
 }
 
@@ -152,14 +176,20 @@ header div {
 
 
 .sec-1 header h1 {
+  animation: slidedown .7s ease-out 1.9s forwards;
   font-size: 9rem;
+  opacity: 0;
 }
 
 .sec-1 header p {
+  animation: slidedown .5s ease-out 2.1s forwards;
+  opacity: 0;
   font-size: 3rem;
 }
 
 .sec-1 header button {
+  animation: slidedown .5s ease-out 2.1s forwards;
+  opacity: 0;
   margin-top: 1rem;
   font-size: 2rem;
   width: 15rem;
@@ -178,6 +208,42 @@ header div {
   transform: translate(2px ,-2px);
 }
 
+ .fa-mouse{
+   animation: slide 2s ease 2s forwards, pupup 1.5s ease 4s infinite;
+   position: absolute;
+   bottom: 10rem;
+   left: 50%;
+   font-size: 3rem;
+   z-index: 20;
+   color: #fff;
+   opacity: 0;
+ }
+
+ @keyframes slide{
+   0%{
+    opacity: 0;
+    transform: translateY(10rem);
+   }
+   100%{
+    opacity: 0.6;
+     transform: translateY(0);
+   }
+ }
+
+ @keyframes pupup{
+   0%{
+     opacity: 0.6;
+     transform: scale(0.8);
+   }
+   50%{
+     opacity: 1;
+     transform: scale(1);
+   }
+   100%{
+     opacity: 0.6;
+     transform: scale(0.8);
+   }
+ }
 /* section-2 */
 .section-2 {
   padding: 2% 5%;

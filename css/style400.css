@@ -14,18 +14,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
-/* .section-1,
-.section-2,
-.section-3,
-.section-4,
-.section-5,
-.section-6,
-.section-7 {
-  padding: 0% 0%;
-  position: relative;
-} */
-
 .sec-1,.section-2,.section-3,.section-4,.section-5,.section-7,.section-8{
   overflow-x: hidden;
 }
@@ -165,13 +153,14 @@ header div {
   padding: 1rem 0;
   letter-spacing: auto;
   font-weight: 600;
+  
 }
 
 .sec-1 header p {
   font-size: 2rem;
   padding-left: 0.5rem;
   color: rgb(255, 255, 255);
-  opacity: 0.8;
+  opacity: 0;
   width: 100%;
 
 }
@@ -179,7 +168,10 @@ header div {
 .sec-1 header button {
   margin-top: 2rem;
 }
-
+.fa-mouse{
+  animation: none;
+  display: none;
+}
 
 
 
